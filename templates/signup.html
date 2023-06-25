@@ -1,0 +1,337 @@
+{% include 'nav.html' %} {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <!-- Include jQuery library first -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Include Bootstrap JavaScript after jQuery -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+      /* Add your custom styles here */
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .signup-form label {
+        font-weight: bold;
+      }
+      .signup-form button {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center">Sign Up</h2>
+
+      <form action="{% url 'signup' %}" class="signup-form" method="POST">
+        {% csrf_token %}
+
+        <div class="form-group">
+          <label for="fname">First Name:</label>
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="lname">Last Name:</label>
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">Mobile No:</label>
+          <input
+            type="number"
+            name="mobile"
+            id="mobile"
+            class="form-control"
+            required
+          /><span
+            id="mobileError"
+            style="color: red; font-weight: bold"
+            class="error-message"
+          ></span>
+        </div>
+
+        <div class="form-group">
+          <label for="mail">Mail:</label>
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            class="form-control"
+            required
+          /><span
+            id="emailError"
+            style="color: red; font-weight: bold"
+            class="error-message"
+          ></span>
+        </div>
+
+        <div class="form-group">
+          <label for="city">City:</label>
+          <select name="city" id="city" class="form-control" required>
+            <option value="">Select a city</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Tiruchirappalli">Tiruchirappalli</option>
+            <option value="Salem">Salem</option>
+            <option value="Tirunelveli">Tirunelveli</option>
+            <option value="Tiruppur">Tiruppur</option>
+            <option value="Erode">Erode</option>
+            <option value="Vellore">Vellore</option>
+            <option value="Thoothukudi">Thoothukudi</option>
+            <option value="Dindigul">Dindigul</option>
+            <option value="Thanjavur">Thanjavur</option>
+            <option value="Ranipet">Ranipet</option>
+            <option value="Sivakasi">Sivakasi</option>
+            <option value="Karur">Karur</option>
+            <option value="Nagercoil">Nagercoil</option>
+            <option value="Hosur">Hosur</option>
+            <option value="Thanjavur">Thanjavur</option>
+            <option value="Tambaram">Tambaram</option>
+            <option value="Cuddalore">Cuddalore</option>
+            <option value="Kanchipuram">Kanchipuram</option>
+            <option value="Tiruvannamalai">Tiruvannamalai</option>
+            <option value="Pollachi">Pollachi</option>
+            <option value="Rajapalayam">Rajapalayam</option>
+            <option value="Krishnagiri">Krishnagiri</option>
+            <option value="Neyveli">Neyveli</option>
+            <option value="Nagapattinam">Nagapattinam</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea
+            name="address"
+            id="address"
+            class="form-control"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">DOB:</label>
+          <input
+            type="date"
+            name="dob"
+            id="dob"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="bloodgroup">Blood Type:</label>
+          <select
+            name="bloodgroup"
+            id="bloodgroup"
+            class="form-control"
+            required
+          >
+            <option value="">Select a blood group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select name="gender" id="gender" class="form-control" required>
+            <option value="">Select a gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="confirm_password">Confirm Password:</label>
+          <input
+            type="password"
+            name="confirm_password"
+            id="confirm_password"
+            class="form-control"
+            required
+          />
+        </div>
+        <div id="error-message" style="color: red"></div>
+
+        <div class="form-group form-check">
+          <input
+            type="checkbox"
+            name="agreement"
+            id="agreement"
+            class="form-check-input"
+            required
+          />
+          <label class="form-check-label" for="agreement"
+            >I accept to share my data</label
+          >
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="submitBtn" disabled>
+          Sign Up
+        </button>
+      </form>
+    </div>
+    {% include 'footer.html' %}
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+      // Function to check if the mobile number is 10 digits
+      function validateMobile() {
+        const mobileInput = document.getElementById("mobile");
+        const mobileValue = mobileInput.value.trim();
+        const mobileRegex = /^\d{10}$/;
+        const errorMessage = document.getElementById("error-message");
+
+        if (!mobileRegex.test(mobileValue)) {
+          errorMessage.textContent = "Mobile number should be 10 digits.";
+          mobileInput.classList.add("is-invalid");
+          return false;
+        }
+
+        errorMessage.textContent = "";
+        mobileInput.classList.remove("is-invalid");
+        return true;
+      }
+
+      // Function to check if the password and confirm password fields match
+      function validatePassword() {
+        const passwordInput = document.getElementById("password");
+        const confirmPasswordInput =
+          document.getElementById("confirm_password");
+        const passwordValue = passwordInput.value.trim();
+        const confirmPasswordValue = confirmPasswordInput.value.trim();
+        const errorMessage = document.getElementById("error-message");
+
+        if (passwordValue !== confirmPasswordValue) {
+          errorMessage.textContent = "Passwords do not match.";
+          return false;
+        }
+
+        errorMessage.textContent = "";
+        return true;
+      }
+
+      // Function to check if the checkbox is checked
+      function validateCheckbox() {
+        const agreementCheckbox = document.getElementById("agreement");
+        const errorMessage = document.getElementById("error-message");
+
+        if (!agreementCheckbox.checked) {
+          errorMessage.textContent =
+            "You must accept the data sharing agreement.";
+          return false;
+        }
+
+        errorMessage.textContent = "";
+        return true;
+      }
+
+      // Function to enable/disable the submit button based on validation
+      function validateForm() {
+        const submitBtn = document.getElementById("submitBtn");
+        const mobileValid = validateMobile();
+        const passwordValid = validatePassword();
+        const checkboxValid = validateCheckbox();
+
+        submitBtn.disabled = !(mobileValid && passwordValid && checkboxValid);
+      }
+
+      // Add event listeners to input fields
+      const mobileInput = document.getElementById("mobile");
+      mobileInput.addEventListener("input", validateForm);
+
+      const passwordInput = document.getElementById("password");
+      const confirmPasswordInput = document.getElementById("confirm_password");
+      passwordInput.addEventListener("input", validateForm);
+      confirmPasswordInput.addEventListener("input", validateForm);
+
+      const agreementCheckbox = document.getElementById("agreement");
+      agreementCheckbox.addEventListener("change", validateForm);
+
+      $(document).ready(function () {
+        $(".signup-form").submit(function (event) {
+          event.preventDefault(); // Prevent the form from submitting normally
+
+          var mobile = $("#mobile").val();
+          var email = $("#mail").val();
+
+          $.ajax({
+            url: "{% url 'check_existing_data' %}",
+            type: "POST",
+            data: {
+              mobile: mobile,
+              email: email,
+            },
+            dataType: "json",
+            success: function (response) {
+              if (response.mobile_exists) {
+                $("#mobileError").text("Mobile number already exists");
+              } else {
+                $("#mobileError").text("");
+              }
+
+              if (response.email_exists) {
+                $("#emailError").text("Email already exists");
+              } else {
+                $("#emailError").text("");
+              }
+
+              if (!response.mobile_exists && !response.email_exists) {
+                // All fields are valid, enable the submit button
+                $("#submitBtn").prop("disabled", false);
+                $(".signup-form")[0].submit(); // Submit the form
+              }
+            },
+            error: function (xhr, status, error) {
+              console.log(error);
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
