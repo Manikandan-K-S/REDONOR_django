@@ -1,0 +1,53 @@
+{% include 'nav.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blood Banks</title>
+
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
+    <style>
+      /* Custom styles for the table */
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #f9f9f9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <h1 class="text-center mb-4">Blood Banks</h1>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>District</th>
+            <th>Name</th>
+            <th>Contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for blood_bank in blood_banks %}
+          <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ blood_bank.city }}</td>
+            <td>{{ blood_bank.name }}</td>
+            <td>{{ blood_bank.contact }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% include 'footer.html' %}
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

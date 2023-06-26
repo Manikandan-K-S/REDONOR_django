@@ -1,0 +1,91 @@
+//every contact in the contact field is collected seperately only name is copied directly
+
+District,Name,Contact
+Ariyalur,Government Headquarters Hospital,04329 224 050
+Chennai,Government Rajiv Gandhi Medical College Hospital,044-25305711
+Chennai,Government Stanley Medical College Hospital,044-25284941
+Chennai,Institute of Child Health & Hospital for Children,044-28191135
+Chennai,Government Kilpauk Medical College Hospital,044-28364951
+Chennai,Government Royapettah Hospital,044-28482611
+Chennai,Institute Of Obstetrics And Gynaecology & Govt. Hospital For Women & Children,044 2819 1483
+Chennai,Government Kasturba Gandhi Hospital For Women & Children,044 2854 5123
+Chennai,Government Peripheral Hospital Anna Nagar,044 2620 9490
+Chennai,ESI Hospital Ayanavaram,044 2644 9284
+Chennai,Government RSRM Hospital,044 2590 1665
+Chennai,MGR University Blood Bank,044-22353546
+Coimbatore,Government Medical College Hospital Coimbatore,0422-54272275
+Coimbatore,Government Hospital Pollachi,+91 99523 31525
+Coimbatore,Government Hospital Mettupalayam,04254 272275
+Coimbatore,ESI Hospital Coimbatore,0422-2574391
+Cuddalore,Government Headquarters Hospital Cuddalore,04142-230052
+Cuddalore,Government Hospital Chidambaram,04144-223099
+Cuddalore,Government Hospital Virudhachalam,04143-230325
+Dharmapuri,Government Medical College Hospital Dharmapuri,04342 231748
+Dindigul,Government Headquarters Hospital Dindigul,0451-2424600
+Dindigul,Government Hospital Palani,04542-248553
+Erode,Government Headquarters Hospital Erode,04242-2253676
+Erode,Government Hospital Gobichettipalayam,04285 227 153
+Kancheepuram,Government Medical College Hospital Chengalpattu,044 27431909
+Kancheepuram,Government Arignar Anna Memorial Cancer Hospital Karapettai,044 2726 4244
+Kancheepuram,Government Headquarters Hospital Kancheepuram,0417 232538
+Kancheepuram,Government Hospital Maduranthagam,044 2755 5216
+Kancheepuram,Government Hospital Tambaram at Chrompet,044 22382400
+Kanyakumari,Government Medical College Hospital Kanyakumari,04652 236949
+Kanyakumari,Government Headquarters Hospital Padmanabhapuram,04651 256 023
+Karur,Government Medical College Hospital Karur,0432-4260197
+Krishnagiri,Government Headquarters Hospital Krishnagiri,04343 238 880
+Krishnagiri,Government Hospital Hosur,04344-222635
+Madurai,Government Rajaji Hospital,0452-2520950
+Madurai,Government Headquarters Hospital Usilampatti,04552 251 880
+Nagapattinam,Government Headquarters Hospital Nagapattinam,04365 248 600
+Nagapattinam,Government Hospital Mayiladuthurai,04364 223 451
+Namakkal,Government Hospital Tiruchengode,04286-221203
+Namakkal,Government Headquarters Hospital Namakkal,0424 225 3676
+Namakkal,Government Hospital Rasipuram,04287-222878
+Nilgiris,Government Headquarters Hospital Ooty,0424 225 3676
+Nilgiris,Government Hospital Coonoor,04232-231050
+Nilgiris,Government Hospital Gudalur,04262-261222
+Perambalur,Government Headquarters Hospital Perambalur,04328 277 128
+Pudukkottai,Government Headquarters Hospital Pudukottai,04332 228 111
+Pudukkottai,Government Hospital Aranthangi,04371-270544
+Ramnad,Government Headquarters Hospital Ramanathapuram,04567 228 178
+Salem,Government Mohan Kumaramangalam Medical College Hospital,0427 221 0964
+Salem,Government Headquarters Hospital Mettur Dam,04298-245400
+Salem,Government Hospital Athoor,04282-243771
+Sivagangai,Government Headquarters Hospital Karaikudi,045652 20183
+Sivagangai,Government Medical College Hospital Sivagangai,04575 246356
+Thanjavur,Government Medical College Hospital Thanjavur,04362-246452
+Thanjavur,Government Raja Mirasdar Hospital Thanjavur,04362231023
+Thanjavur,Government Headquarters Hospital Kumbakonam,0435 242 5104
+Thanjavur,Government Hospital Pattukottai,04332 228 111
+Theni,Government Medical College Hospital Theni,04546 294 053
+Theni,Government Headquarters Hospital Periyakulam,04546 231 292
+Thiruvallur,Government Headquarters Hospital Thiruvallur,044 2766 4849
+Tiruvannamalai,Government Medical College Hospital Tiruvannamalai,04175 223 585
+Tirunelveli,Government Medical College Hospital Tirunelveli,0462 257 6878
+Tirunelveli,Government Headquarters Hospital Tenkasi,04633 280 138
+Tirunelveli,Government Hospital Sankarankovil,04636-222399
+Tirunelveli,Government Hospital Ambasamudram,04634 253 480
+Tiruppur,Government Headquarters Hospital Tiruppur,0421 242 3400
+Tiruppur,Government Hospital Udumalpet,04252 220092
+Tiruppur,Government Hospital Dharapuram,04258 220 226
+Thiruvarur,Government Medical College Hospital Thiruvarur,04366 222204
+Trichy,Annal Gandhi Memorial Govt. Hospital Trichy,0431 277 0047
+Trichy,Government Headquarters Hospital Manapparai,0432-260760
+Tuticorin,Government Medical College Hospital Tuticorin,0462 232 1052
+Tuticorin,Government Headquarters Hospital Kovilpatti,04632 223 106
+Tiruchendur,Government Hospital Blood Bank, +91 97905 99466
+Vellore,Government Medical College Hospital Vellore,0416 226 3900
+Vellore,Government Headquarters Hospital Wallajah,04172-232538
+Vellore,Government Hospital Tirupathur,04179-220080
+Vellore,Government Hospital Gudiyatham,04171-221111
+Vellore,Government Hospital Ambur,04174 244 656
+Vellore,Government Hospital Arakkonam,04177 232 270
+Vellore,Government Hospital Vaniyambadi,04174-225700
+Villupuram,Government Medical College Hospital Villupuram,04146-232101
+Villupuram,Government Hospital Tindivanam,04147 222250
+Villupuram,Government Headquarters Hospital Kallakurichi,04151 222 527
+Virudhunagar,Government Hospital Sivakasi,04562 220301
+Virudhunagar,Government Hospital Rajapalayam,04563-221301
+Virudhunagar,Government Headquarters Hospital Virudhunagar,04562 244 425
+Virudhunagar,Government Hospital Aruppukottai,04566-220264
